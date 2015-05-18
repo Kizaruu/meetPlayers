@@ -1,0 +1,66 @@
+{# empty Twig template #}
+
+<html>
+    {% block head %}
+        <head>
+            <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+            <title>MeetPlayers</title>
+            {% block stylesheets %}
+                <link rel="stylesheet" href="{{ asset('css/bootstrap.css') }}" type="text/css" />
+                <link rel="stylesheet" href="{{ asset('css/MeetPlayers.css') }}" type="text/css" />
+            {% endblock %}
+        </head>
+    {% endblock %}
+    <body>
+        {% block nav %}
+            <div class="container">
+                <nav class="navbar navbar-inverse">
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="{{ path('meet_players_meet_players_homepage')}}">Acceuil</a></li>
+                        <li><a href="{{ path('meet_players_meet_players_profil') }}">Profil</a></li>
+                        <li><a href="{{ path('meet_players_meet_players_recherche') }}">Recherche</a></li>
+                        <li><a href="{{ path('meet_players_meet_players_messages') }}">Messages</a></li>
+                    </ul> 
+                    <form class ="navbar-form pull-right">
+                        <input type="text" style = "width:150px" class="input-small" placeholder="Recherche">
+                        <button type="submit" class="btn btn-primary btn-xs"><span class="glyphicon glyphicon-eye-open"></span>Chercher</button>
+                    </form>
+                </nav>
+            </div>
+
+
+        {% endblock %}
+
+        <div class="container">
+            <div class="row">
+                <section class="col-lg-4">
+                    {% block aside %}                
+                    {% endblock %}
+                </section>
+                <section class="col-lg-8">
+
+                    <div id="article">
+                        {% block article %}  
+                        {% endblock %}
+                    </div>
+                </section>
+            </div>    
+                    <footer class="row">
+                        <section class="col-lg-6">
+                            <h2>Contact</h2>
+                            <li><a href="{{ path('meet_players_meet_players_profil') }}">Contact</a></li>
+                            <li><a href="{{ path('meet_players_meet_players_recherche') }}">Soumettre une idée</a></li>
+                            <br>   
+                        </section>
+                        <section class="col-lg-6">
+                            <h2>Infos</h2>
+                            <li><a href="{{ path('meet_players_meet_players_profil') }}">FAQ</a></li>
+                            <li><a href="{{ path('meet_players_meet_players_recherche') }}">Plan du site</a></li>
+                            <li><a href="{{ path('meet_players_meet_players_messages') }}">Conditions</a></li>                       
+                        </section>
+                    </footer>            
+            </div>
+        </div
+   </div>
+    </body>
+</html>

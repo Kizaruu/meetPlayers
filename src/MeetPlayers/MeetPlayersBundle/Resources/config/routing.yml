@@ -1,0 +1,21 @@
+# app/config/routing.yml
+meet_players_meet_players_homepage:
+    path:     /
+    defaults: { _controller: MeetPlayersMeetPlayersBundle:Default:index }
+
+meet_players_meet_players_profil:
+    path:     /profil
+    defaults: { _controller: MeetPlayersMeetPlayersBundle:Default:profil }
+    
+meet_players_meet_players_messages:
+    path:     /messages
+    defaults: { _controller: MeetPlayersMeetPlayersBundle:Default:messages }
+    
+meet_players_meet_players_recherche:
+    path:     /recherche
+    defaults: { _controller: MeetPlayersMeetPlayersBundle:Default:recherche }
+    
+meet_players_meet_players_modifierprofil:
+    path:     /modifierprofil
+    defaults: { _controller: MeetPlayersMeetPlayersBundle:Default:modifierprofil }
+

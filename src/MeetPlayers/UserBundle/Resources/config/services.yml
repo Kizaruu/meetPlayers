@@ -1,0 +1,7 @@
+parameters:
+#    meet_players_user.example.class: MeetPlayers\UserBundle\Example
+
+services:
+#    meet_players_user.example:
+#        class: %meet_players_user.example.class%
+#        arguments: [@service_id, "plain_value", %parameter%]

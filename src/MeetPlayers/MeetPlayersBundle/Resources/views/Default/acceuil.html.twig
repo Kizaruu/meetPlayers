@@ -1,0 +1,95 @@
+{# app/Resources/views/acceuil.html.twig #}
+
+<!DOCTYPE html>
+
+
+
+<html>
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>TennisPlay</title>
+  {% block stylesheets %}
+  <link rel="stylesheet" href="{{ asset('css/bootstrap.css') }}" type="text/css" />
+  {% endblock %}
+</head>
+
+<body>
+ <div class="container">
+   <nav class="navbar navbar-inverse">
+     <ul class="nav navbar-nav">
+      <li class="active"><a href="#">Acceuil</a></li>
+      <li><a href="#">Profil</a></li>
+      <li><a href="#">Recherche</a></li>
+      <li><a href="#">Messages</a></li>
+    </ul> 
+    <form class ="navbar-form pull-right">
+      <input type="text" style = "width:150px" calss="input-small" placeholder="Recherche">
+      <button type="submit" class="btn btn-primary btn-xs"><span class="glyphicon glyphicon-eye-open"></span>Chercher</button>
+    </form>
+  </nav>
+</div>
+
+<div class="container">
+  <div class="row">
+    <section class="col-lg-4">
+
+     <div id="aside">
+       <h1>News</h1>
+       <div id="news">
+        <h1>Tournoi d'Ales</h1>
+        <p>
+          Tournoi d'Ales du 18 juin au 30 juin.
+        </p>
+        <p>29/06/2014</p>
+      </div>
+      <div id="news">
+        <h1>Tournoi de Nîmes</h1>
+        <p>
+          Tournoi de Nîmes du 18 juillet au 30 juillet.
+        </p>
+        <p>29/06/2014</p>
+      </div>
+     </div>
+    </section>
+  
+  <section class="col-lg-8">
+
+  <div div id="article">
+    <div id="TexteBienvenue">
+      <h1>Bienvenue</h1>
+      <p>Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500, quand un peintre anonyme assembla ensemble des morceaux de texte pour réaliser un livre spécimen de polices de texte. Il n'a pas fait que survivre cinq siècles, mais s'est aussi adapté à la bureautique informatique, sans que son contenu n'en soit modifié. Il a été popularisé dans les années 1960 grâce à la vente de feuilles Letraset contenant des passages du Lorem Ipsum, et, plus récemment, par son inclusion dans des applications de mise en page de texte, comme Aldus PageMaker.
+      </p>
+
+    </div>
+    <div id="MembresConnectes">
+      <h1>Derniers membres connectés</h1>
+      <div id="photosconnectes">
+        <img src="Images/PhotosProfils/1.png">
+        <img src="Images/PhotosProfils/2.png">
+        <img src="Images/PhotosProfils/3.png">
+        <img src="Images/PhotosProfils/4.png">
+        <img src="Images/PhotosProfils/5.png">
+      </div>
+    </div>
+    <div id="MembresInscrits">
+      <h1>Derniers membres inscrits</h1>
+      <div id="photosinscrits">
+        <img src="Images/PhotosProfils/7.png">
+        <img src="Images/PhotosProfils/8.png">
+        <img src="Images/PhotosProfils/9.png">
+        <img src="Images/PhotosProfils/10.png">
+        <img src="Images/PhotosProfils/11.png">
+      </div>
+    </div>
+  </div>
+  </section>
+</div>
+</div>
+<footer>
+  Contact
+</footer>
+
+</body>
+
+</html>

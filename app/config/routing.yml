@@ -1,0 +1,11 @@
+meet_players_user:
+    resource: "@MeetPlayersUserBundle/Resources/config/routing.yml"
+    prefix:   /
+
+meet_players_meet_players:
+    resource: "@MeetPlayersMeetPlayersBundle/Resources/config/routing.yml"
+    prefix:   /
+    
+fos_user:
+    resource: "@FOSUserBundle/Resources/config/routing/all.xml"
+
